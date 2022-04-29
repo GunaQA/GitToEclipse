@@ -222,20 +222,20 @@ public class BaseClass {
 		actions.dragAndDrop(sourceElement, targetElement).perform();
 	}
 	
+	
+	public void acceptingAlert() {
+		Alert alert=driver.switchTo().alert();
+		alert.accept();
+	}
 	//Robot Class
 	
-/*	public void pressingKey(KeyEvent keycode) throws AWTException {
+	/*	public void pressingKey(KeyEvent keycode) throws AWTException {
 		robot=new Robot();
 		robot.keyPress(KeyEvent.keycode);
 	}*/
 	
 	
 	//Alert
-	
-	public void acceptingAlert() {
-		Alert alert=driver.switchTo().alert();
-		alert.accept();
-	}
 	
 	public void dismissingAlert() {
 		Alert alert=driver.switchTo().alert();
